@@ -75,7 +75,7 @@ const swiperWork = new Swiper('.work__swiper', {
   // delay: 3000,
   // disableOnInteraction: false,
   //}
-});
+})
 
 /*=============== SERVICES ACCORDION ===============*/ 
 
