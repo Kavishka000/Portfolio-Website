@@ -78,6 +78,22 @@ const swiperWork = new Swiper('.work__swiper', {
 })
 
 /*=============== SERVICES ACCORDION ===============*/ 
+const servicesCards = document.querySelectorAll('.services__card'),
+      servicesButtons = document.querySelectorAll('.services__button')
+
+// It iterates over each button found
+servicesButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const currentCard = button.closest('.services__card'), // Get the class of the clicked button (.services__card) and ⬇
+              isOpen = currentCard.classList.contains('services-open') // Check already has the services-open class (Returns true or false)
+
+      // Close all other services data
+      servicesCards.forEach(card => {
+      card.classList.replace('services-open', 'services-close')
+})
+        
+    })
+})
 
 
 /*=============== TESTIMONIALS OF DUPLICATE CARDS ===============*/ 
