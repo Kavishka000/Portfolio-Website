@@ -29,7 +29,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== HOME TEXT CIRCULAR ===============*/
 const homeText = document.getElementById('home-text'),
-      letters = homeText.textContent.trim().split(''), // Coverts text into an array of characters
+      letters = homeText.textContent.trim().split(''), // Converts text into an array of characters
       angleStep = 360 / letters.length // Angle for each character; length counts the number of characters
 
 homeText.textContent = '' // Clears the original content
